@@ -21,7 +21,8 @@ import { Box, Image, Button, Select, Text, Input, Icon, Menu,
     HStack,
     InputGroup,
     InputRightElement,
-    InputLeftElement
+    InputLeftElement,
+    Heading
     } from '@chakra-ui/react';
 import { UpDownIcon, ChevronDownIcon, HamburgerIcon, PlusSquareIcon, InfoIcon } from '@chakra-ui/icons';
 import BridgeSelect from './BridgeSelect';
@@ -63,6 +64,7 @@ function Transfer() {
     const inputBg = useColorModeValue('rgb(245, 247, 252)', 'rgb(23, 23, 26)');
 
     return <>
+        <Heading textAlign='center' mb='20px'>MTC Token Bridge</Heading>
         <Box borderWidth='1px' borderRadius='10px' overflow='hidden' p="50px" bg={bg}>
             <Box overflow='hidden' p="10px">
                 <Box display='flex' alignItems='center' mb="10px" justifyContent='space-between'>
